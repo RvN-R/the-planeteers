@@ -184,6 +184,14 @@ let items = [
         'fact': 'fact19'
     },
     {
+        'name': 'Tinned Food Can',
+        'id': "al-tinfd-food-can",
+        'category': 'aluminium',
+        'image': 'image-source', //insert path to image
+        'bin': 'recycle',
+        'fact': 'fact23'
+    },
+    {
         'name': 'Bread',
         'id': "org-fd-brd",
         'category': 'food',
@@ -272,12 +280,68 @@ let items = [
         'fact': 'fact21'
     },
     {
+        'name': 'Toothpaste Container',
+        'id': "genw-cont-tp-cntr",
+        'category': 'general',
+        'image': 'image-source', //insert path to image
+        'bin': 'general-waste',
+        'fact': 'fact22'
+    },
+    {
         'name': 'Contaminated Food Container',
         'id': "genw-cont-fd-cntr",
         'category': 'general',
         'image': 'image-source', //insert path to image
         'bin': 'general-waste',
         'fact': 'fact22'
+    },
+    {
+        'name': 'Ashes (cold)',
+        'id': "genw-cont-ashes",
+        'category': 'general',
+        'image': 'image-source', //insert path to image
+        'bin': 'general-waste',
+        'fact': 'fact22'
+    },
+    {
+        'name': 'Nappies',
+        'id': "genw-cont-nap",
+        'category': 'general',
+        'image': 'image-source', //insert path to image
+        'bin': 'general-waste',
+        'fact': 'fact24'
+    },
+    {
+        'name': 'Crisp, sweet or foil-based wrappers',
+        'id': "genw-cont-wrap",
+        'category': 'general',
+        'image': 'image-source', //insert path to image
+        'bin': 'general-waste',
+        'fact': 'fact22'
+    },
+    {
+        'name': 'Sanitary Waste',
+        'id': "genw-cont-sanit",
+        'category': 'general',
+        'image': 'image-source', //insert path to image
+        'bin': 'general-waste',
+        'fact': 'fact22'
+    },
+    {
+        'name': 'Rigid Plastic Containers',
+        'id': "genw-cont-rig-plstc-cont",
+        'category': 'general',
+        'image': 'image-source', //insert path to image
+        'bin': 'general-waste',
+        'fact': 'fact22'
+    },
+    {
+        'name': 'Ceramics: broken cups, plates',
+        'id': "genw-cont-ceramics",
+        'category': 'general',
+        'image': 'image-source', //insert path to image
+        'bin': 'general-waste',
+        'fact': 'fact26'
     },
     {
         'name': 'White Wine Bottle',
