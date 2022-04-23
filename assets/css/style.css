@@ -71,6 +71,8 @@ p{
 } */
 h2 {
     text-align: center;
+    padding: 20px 0;
+    margin: 20px 0;
 }
 
 .container{
@@ -101,8 +103,17 @@ h2 {
     left: 0;
     z-index: -1;
     border-radius: 5px;
-    
-    
+    background-color: #072110;
+    color: white;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.person-text p {
+    margin: 0 10px;
 }
 
 .person-image img {
@@ -129,19 +140,21 @@ h2 {
 /* purpose of this game and this page */
 .purpose {
     display: flex;
-    border: 2px solid black;
     justify-content: space-around;
-    margin: 5%;
-    height: 300px;
+    margin: 0 5%;
+    height: auto;
 }
 
 .purpose div {
     width: 100%;
-    margin: 3%;
-    border: 1px solid brown;
+    margin: 0 2%;
+}
+.purpose p {
+    text-align: justify ;
+    line-height: 1.5em;
 }
 
-h3 {
+h5 {
     text-align: center;
 }
 
@@ -150,6 +163,12 @@ h3 {
 @media screen and (max-width: 770px) {
     .person {
         width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .purpose {
+        flex-direction: column;
     }
 }
 
