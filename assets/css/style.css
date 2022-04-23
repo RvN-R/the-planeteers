@@ -10,3 +10,99 @@ header {
     aspect-ratio: 4 / 3;
     object-fit: cover;
 }
+/* about us page */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+h2 {
+    text-align: center;
+}
+
+.container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 30px;
+}
+
+.person {
+    width: 29%;
+    height: 100%;
+    /* border: 2px solid black; */
+    margin: 0 2%;
+    text-align: justify;
+}
+
+.person-container {
+    position: relative;
+}
+
+.person-text{
+    /* border: 2px solid green; */
+    /* min-height: 200px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    
+    
+}
+
+.person-image img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.person-image img:hover {
+    opacity: 0;
+  transition:opacity 1s;
+}
+
+.person-name {
+    text-align: center;
+    background-color: #072110;
+    color: white;
+    text-transform: uppercase;
+    bottom: 0;
+    margin-top: 3px;
+    border-radius: 5px;
+    padding: 8px;
+}
+/* purpose of this game and this page */
+.purpose {
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-around;
+    margin: 5%;
+    height: 300px;
+}
+
+.purpose div {
+    width: 100%;
+    margin: 3%;
+    border: 1px solid brown;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* media query */
+
+@media screen and (max-width: 770px) {
+    .person {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .person {
+        width: 100%;
+    }
+}
