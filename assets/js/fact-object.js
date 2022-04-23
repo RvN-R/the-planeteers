@@ -20,5 +20,9 @@ facts = {
     fact19: "The energy saved by recycling 1 aluminium drink can is enough to power a television for three hours.",
     fact20: "Steel lasts for a long time, steel food cans can be recycled repeatedly without loss of strength or quality.",
     fact21: "Garden waste is great for making compost for your garden.",
-    fact22: "Every year 2.12 billion tonnes of waste is dumped. The more we recycle, the more we can reduce this number."
+    fact22: "Every year 2.12 billion tonnes of waste is dumped. The more we recycle, the more we can reduce this number.",
+    fact23: "Canned foods have a long shelf life so can be used straight from the shelf with no need for chilling or freezing which saves more energy – and more money",
+    fact24: "Once in landfill, the plastics in disposable nappies can take 200 to 500 years to break down.",
+    fact25: "Although bubble packaging does not have any reusability in itself, it can hold other items such as clothes and bottles together when necessary, therefore resulting in further waste like bags and straws.",
+    fact26: "One of the best qualities about ceramics is that they are truly a natural product."
 }
