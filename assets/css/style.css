@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 header {
     margin: 0;
+}
+
+.card,
+p{
+    font-family: 'Roboto';
 }
 
 .fact-image {
@@ -10,6 +17,44 @@ header {
     aspect-ratio: 4 / 3;
     object-fit: cover;
 }
+
+/* home page */
+
+.home-title,
+.did-you-know-title,
+.make-a-difference-title{
+    font-family:'Bangers';
+    color: green;
+    font-weight: 600;
+}
+
+.did-you-know-title,
+.make-a-difference-title{
+    padding-top: 15px;
+}
+
+.home-header-container{
+    background-image: url("/assets/images/home-header-background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+
+.play-game-btn{
+    font-family: 'Bangers';
+}
+
+.home-intro-text{
+    color: white;
+}
+
+.home-info-container{
+    display: flex;
+
+}
+
 /* about us page */
 
 /* * {
