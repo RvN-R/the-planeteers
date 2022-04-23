@@ -1,5 +1,30 @@
 // Game logic
 
+$(document).ready(function(){
+    let playButton = $('#play-button');
+    let tutorialButton = $('#tutorial-button');
+    let menu = $('#game-menu');
+    let mainGame = $('#main-game');
+    let tutorial = $('#tutorial');
+    let backButton = $('#back-to-menu-button');
+
+    playButton.click(function(){
+        menu.hide();
+        mainGame.removeClass('d-none');
+    })
+
+    tutorialButton.click(function(){
+        menu.hide();
+        tutorial.removeClass('d-none');
+    })
+
+    backButton.click(function(){
+        tutorial.hide();
+        menu.show();
+    })
+})
+
+
 /**
  * Displays the bins in the game area
  */
