@@ -16,6 +16,9 @@ facts = {
     fact15: "Bubble wrap is not easily recyclable. Save it to reuse when packaging fragile things.",
     fact16: "People often forget to recycle their bathroom items, but many can and should be recycled",
     fact17: "Lots of edible food is thrown away each year. Consider if you could reuse or cook leftovers before throwing them in the waste.",
-    fact18: "Fruit and vegetables can go in the organic waste recycling bin but you could use them to make great compost for your flowers.",
+    fact18: "Lots of items including fruit and vegetables could be used to make great compost for your flowers.",
     fact19: "The energy saved by recycling 1 aluminium drink can is enough to power a television for three hours.",
+    fact20: "Steel lasts for a long time, steel food cans can be recycled repeatedly without loss of strength or quality.",
+    fact21: "Garden waste is great for making compost for your garden.",
+    fact22: "Every year 2.12 billion tonnes of waste is dumped. The more we recycle, the more we can reduce this number."
 }
