@@ -34,7 +34,7 @@ p{
 }
 
 .home-header-container{
-    background-image: url("/assets/images/home-header-background-image.jpg");
+    background-image: url("../images/home-header-background-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
