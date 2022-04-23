@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 header {
     margin: 0;
+}
+
+.card,
+p{
+    font-family: 'Roboto';
 }
 
 .fact-image {
@@ -9,4 +16,138 @@ header {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
+}
+
+/* home page */
+
+.home-title,
+.did-you-know-title,
+.make-a-difference-title{
+    font-family:'Bangers';
+    color: green;
+    font-weight: 600;
+}
+
+.did-you-know-title,
+.make-a-difference-title{
+    padding-top: 15px;
+}
+
+.home-header-container{
+    background-image: url("/assets/images/home-header-background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+
+.play-game-btn{
+    font-family: 'Bangers';
+}
+
+.home-intro-text{
+    color: white;
+}
+
+.home-info-container{
+    display: flex;
+
+}
+
+/* about us page */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+h2 {
+    text-align: center;
+}
+
+.container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 30px;
+}
+
+.person {
+    width: 29%;
+    height: 100%;
+    /* border: 2px solid black; */
+    margin: 0 2%;
+    text-align: justify;
+}
+
+.person-container {
+    position: relative;
+}
+
+.person-text{
+    /* border: 2px solid green; */
+    /* min-height: 200px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    
+    
+}
+
+.person-image img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.person-image img:hover {
+    opacity: 0;
+  transition:opacity 1s;
+}
+
+.person-name {
+    text-align: center;
+    background-color: #072110;
+    color: white;
+    text-transform: uppercase;
+    bottom: 0;
+    margin-top: 3px;
+    border-radius: 5px;
+    padding: 8px;
+}
+/* purpose of this game and this page */
+.purpose {
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-around;
+    margin: 5%;
+    height: 300px;
+}
+
+.purpose div {
+    width: 100%;
+    margin: 3%;
+    border: 1px solid brown;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* media query */
+
+@media screen and (max-width: 770px) {
+    .person {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .person {
+        width: 100%;
+    }
 }
