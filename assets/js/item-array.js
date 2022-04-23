@@ -4,84 +4,96 @@ let items = [
         'id': "ppr-crdbrd",
         'category': 'paper',
         'image': 'image-source', //insert path to image
-        'bin': 'recycle'
+        'bin': 'recycle',
+        'fact': 'fact1'
     },
     {
         'name': 'Paper',
         'id': "ppr-papr",
         'category': 'paper',
         'image': 'image-source', //insert path to image
-        'bin': 'recycle'
+        'bin': 'recycle',
+        'fact': 'fact2'
     },
     {
         'name': 'Paper Bag',
         'id': "ppr-papr-bg",
         'category': 'paper',
         'image': 'image-source', //insert path to image
-        'bin': 'recycle'
+        'bin': 'recycle',
+        'fact': 'fact2'
     },
     {
         'name': 'Newspaper',
         'id': "ppr-nwspapr",
         'category': 'paper',
         'image': 'image-source', //insert path to image
-        'bin': 'recycle'
+        'bin': 'recycle',
+        'fact': 'fact4'
     },
     {
         'name': 'Leaflet',
         'id': "ppr-lflt",
         'category': 'paper',
         'image': 'image-source', //insert path to image
-        'bin': 'recycle'
+        'bin': 'recycle',
+        'fact': 'fact4'
     },
     {
         'name': 'Envelope',
         'id': "ppr-nvlp",
         'category': 'paper',
         'image': 'image-source', //insert path to image
-        'bin': 'recycle'
+        'bin': 'recycle',
+        'fact': 'fact2'
     },
     {
         'name': 'Book',
         'id': "ppr-bk",
         'category': 'paper',
         'image': 'image-source', //insert path to image
-        'bin': 'recycle'
+        'bin': 'general-waste',
+        'fact': 'fact5'
     },
     {
         'name': 'Magazine',
         'id': "ppr-magzn",
         'category': 'paper',
         'image': 'image-source', //insert path to image
-        'bin': 'recycle'
+        'bin': 'recycle',
+        'fact': 'fact4'
     },
     {
-        'name': 'Tetra-Pak Carton',
+        'name': 'Milk Carton',
         'id': "ppr-ttpk-crtn",
         'category': 'paper',
         'image': 'image-source', //insert path to image
-        'bin': 'recycle'
+        'bin': 'recycle',
+        'fact': 'fact14'
     },
     {
         'name': 'Egg Box',
         'id': "ppr-egg-bx",
         'category': 'paper',
         'image': 'image-source', //insert path to image
-        'bin': 'recycle'
+        'bin': 'recycle',
+        'fact': 'fact3'
     },
     {
         'name': 'Magazine',
         'id': "ppr-magzn",
         'category': 'paper',
         'image': 'image-source', //insert path to image
-        'bin': 'recycle'
+        'bin': 'recycle',
+        'fact': 'fact4'
     },
     {
         'name': 'Coffee Cup',
         'id': "ppr-coff-cp",
         'category': 'paper',
         'image': 'image-source', //insert path to image
-        'bin': 'recycle'
+        'bin': 'general-waste',
+        'fact': 'fact9'
     },
     {
         'name': 'Plastic Bag',
