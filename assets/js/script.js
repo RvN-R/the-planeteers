@@ -25,7 +25,6 @@ function checkAnswer(bin){
     let binType = bin.attr('id').split('-')[0];
     console.log(`bin type: ${binType}`);
     console.log(`data-bin: ${$('#game-img').attr('data-bin')}`)
-    let currentItem = $('#item-name');
 
     if (binType == $('#game-img').attr('data-bin')){
         console.log('Corrrect!')
@@ -33,6 +32,7 @@ function checkAnswer(bin){
     } else {
         console.log('Incorrect!')
     }
+    $('.score').text(score);
 }
 
 /**
@@ -40,6 +40,9 @@ function checkAnswer(bin){
  */
 function gameOver(){
     console.log('Game Over')
+    gameOverView.removeClass('d-none');
+    gameOverView.show();
+    mainGame.hide();
 }
 
 /**
@@ -67,6 +70,7 @@ function nextRound(){
     itemsCopy = [...items];
     rounds = 0;
     score = 0;
+    $('.score').text('0');
     nextRound();
 }
 
@@ -75,14 +79,16 @@ $(document).ready(function(){
     let playButton = $('#play-button');
     let tutorialButton = $('#tutorial-button');
     let menu = $('#game-menu');
-    let mainGame = $('#main-game');
+    mainGame = $('#main-game');
+    gameOverView = $('#game-over')
     let tutorial = $('#tutorial');
-    let backButton = $('#back-to-menu-button');
+    let backButton = $('.back-to-menu-button');
 
     playButton.click(function(){
         console.log('clicked play button')
         menu.hide();
         mainGame.removeClass('d-none');
+        mainGame.show();
         start();
     })
 
@@ -90,11 +96,13 @@ $(document).ready(function(){
         console.log('clicked tutorial button')
         menu.hide();
         tutorial.removeClass('d-none');
+        tutorial.show();
     })
 
     backButton.click(function(){
         console.log('clicked back button')
         tutorial.hide();
+        gameOverView.hide();
         menu.show();
     })
 
