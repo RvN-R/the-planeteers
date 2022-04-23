@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
     </script>
@@ -70,40 +69,51 @@
                                <h3>Tutorial</h3>
                                <p>Tutorial explanation</p>
                                <br>
-                               <button class="btn btn-info" id="back-to-menu-button">Back to Menu</button>
+                               <button class="btn btn-info back-to-menu-button">Back to Menu</button>
                             </div>
                         </div>
                          <!-- Main game display -->
                         <div class="row w-100 d-none" id="main-game">
-                            <div class="col-4 text-left">score</div>
+                            <div class="col-4 text-left">Score: <span class="score">0</span></div>
                             <div class="col-4 text-center">logo</div>
                             <div class="col-4 text-right">timer</div>
-                            <div class="d-flex col-12 w-100 text-center align-items-center justify-content-center">
+                            <div class="d-flex col-12 w-100 text-center align-items-center justify-content-center flex-column">
+                                <p id="item-name">Item name</p>
                                 <img src="assets/images/game-items/plastic-bottle.png" class="img-fluid w-50" id="game-img" alt="">
                             </div> 
                             <div class="col-3 text-center">
                                 <div class="d-flex justify-content-center align-items-center flex-column h-100">
-                                    <i class="fa-solid fa-trash fa-4x"></i>
+                                    <i class="fa-solid fa-trash fa-4x" id="general-waste-bin"></i>
                                     <p>General Waste</p>
                                 </div>
                             </div>
                             <div class="col-3 text-center">
                                 <div class="d-flex justify-content-center align-items-center flex-column h-100">
-                                    <i class="fa-solid fa-trash fa-4x"></i>
+                                    <i class="fa-solid fa-trash fa-4x" id="recycle-bin"></i>
                                     <p>Plastic / Paper</p>
                                 </div>
                             </div>
                             <div class="col-3 text-center">
                                 <div class="d-flex justify-content-center align-items-center flex-column h-100">
-                                    <i class="fa-solid fa-trash fa-4x"></i>
+                                    <i class="fa-solid fa-trash fa-4x" id="glass-bin"></i>
                                     <p>Glass</p>
                                 </div>
                             </div>
                             <div class="col-3 text-center align-middle">
                                 <div class="d-flex justify-content-center align-items-center flex-column h-100">
-                                    <i class="fa-solid fa-trash fa-4x"></i>
+                                    <i class="fa-solid fa-trash fa-4x" id="organic-waste-bin"></i>
                                     <p>Organic Waste</p>
                                 </div>
+                            </div>
+                        </div>
+                        <!-- Game over display -->
+                        <div class="row w-100 d-none" id="game-over">
+                            <div class="col-12 h-100 d-flex align-items-center justify-content-center flex-column">
+                               <h3>Well played!</h3>
+                               <p>Your final score is: <span class="score"></span></p>
+                               <br>
+                               <p>Want to play again?</p>
+                               <button class="btn btn-info back-to-menu-button">Back to Menu</button>
                             </div>
                         </div>
                      </div>
