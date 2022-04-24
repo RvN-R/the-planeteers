@@ -208,6 +208,15 @@ h5 {
     text-align: center;
 }
 
+/* Game Modal */
+.modal-content {
+    border-radius: 0;
+}
+
+.bin-selection {
+    border-bottom: 1px solid #dee2e6;
+}
+
 /* media query */
 
 @media screen and (max-width: 770px) {
