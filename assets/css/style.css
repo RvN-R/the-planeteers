@@ -476,3 +476,10 @@ ul.social {
         max-width: 150px;
     }
 }
+
+/* Media query for navbar links */
+@media screen and (min-width: 990px){
+    .nav-link {
+        font-size: 1.7em;
+    }
+}
