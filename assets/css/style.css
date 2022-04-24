@@ -22,6 +22,29 @@ body {
     object-fit: cover;
 }
 
+.btn-primary{
+    font-family: 'Bangers' !important;
+    color: white !important;
+    text-shadow: 0.5px 0.5px black !important;
+    background-color: #64B334 !important;
+    border-color: #236823 !important;
+    padding: 0.5rem 1rem!important;
+    font-size: 2rem !important;
+    border-radius: 0.3rem !important;
+}
+
+.btn-primary:hover{
+    font-family: 'Bangers' !important;
+    color: #64B334 !important;
+    text-shadow: 0.5px 0.5px black !important;
+    background-color: white !important;
+    border-color: #236823 !important;
+    padding: 0.5rem 1rem!important;
+    font-size: 2rem !important;
+    border-radius: 0.3rem !important;
+}
+
+
 /* Site Colour Variables */
 .honolulu-blue{
     color: #1f6fa4;
