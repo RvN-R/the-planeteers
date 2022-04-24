@@ -144,6 +144,19 @@ p{
 
 }
 
+.card:hover {
+    animation: card 0.2s;
+}
+
+@keyframes card {
+    0% { transform: rotate(0deg); }
+  20% { transform: rotate(1deg); }
+  40% { transform: rotate(-1deg); }
+  60% { transform: rotate(1deg); }
+  80% { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}
+
 /* Game page  ------------------------------------------*/
 .game{
     /* background-image: radial-gradient(#1f6fa4,#246F75, #64B334); */
