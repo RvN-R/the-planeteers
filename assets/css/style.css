@@ -252,6 +252,13 @@ h2 {
     text-align: center;
     padding: 20px 0;
     margin: 20px 0;
+    font-family: 'Bangers';
+    color: #64B334;;
+}
+
+.main-container {
+    background-color: rgb(216, 216, 216);
+    z-index: -2;
 }
 
 .container{
@@ -265,9 +272,11 @@ h2 {
 .person {
     width: 29%;
     height: 100%;
-    /* border: 2px solid black; */
+    border: .3px solid black;
     margin: 0 2%;
     text-align: justify;
+    z-index: 1;
+    border-radius: 5px;
 }
 
 .person-container {
@@ -341,6 +350,8 @@ h2 {
 h5 {
     text-align: center;
     border-bottom: 2px solid #072110;
+    font-family: 'Bangers';
+    color: #64B334;;
 }
 
 /* Footer */
