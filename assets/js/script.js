@@ -7,8 +7,6 @@
 function displayItem(item){
     console.log('Calling displayItem function')
     let gameItem = $('#game-img');
-    console.log(`game img src: ${gameItem.attr('src')}`);
-    console.log(`image path string: ${item['image']}`)
     let itemName = $('#item-name');
     itemName.text(item['name']);
     gameItem.attr('src', item['image']);
@@ -20,22 +18,34 @@ function displayItem(item){
  * displays a pop-up message to inform the user
  */
 function checkAnswer(bin){
+    let modal = $('.modal');
+    let modalHeader = $('.modal-title');
+    let binSelected = $('.bin-selection');
     console.log('Calling checkAnswer function');
-    console.log(`bin: ${bin.attr('id')}`);
+    console.log(`random Item: ${randomItem}`)
     let binType = bin.attr('id').split('-')[0];
     console.log(`bin type: ${binType}`);
     console.log(`data-bin: ${$('#game-img').attr('data-bin')}`)
+    let correctBin = $('#game-img').attr('data-bin')
 
-    if (binType == $('#game-img').attr('data-bin')){
-        console.log('Corrrect!');
+    if (binType == correctBin){
+        console.log('Correct!');
         bin.css({'outline': '2px solid green'});
         score += 10;
+        modalHeader.text('Correct!');
+        binSelected.text(`You selected ${binType} for ${randomItem['name']}, that's right!`)
     } else {
         console.log('Incorrect!');
         // Insert modal logic
+        modalHeader.text('Incorrect!');
+        binSelected.text(`You selected ${binType} for ${randomItem['name']}, but the right bin is ${correctBin}!`)
         bin.css({'outline': '2px solid red'});
     }
     $('.score').text(score);
+    modal.modal('show');
+    let itemFact = randomItem['fact']
+    factArea.text(`${facts[itemFact]}`);
+    console.log('showing modal');
 }
 
 /**
@@ -83,9 +93,11 @@ $(document).ready(function(){
     let tutorialButton = $('#tutorial-button');
     let menu = $('#game-menu');
     mainGame = $('#main-game');
-    gameOverView = $('#game-over')
+    gameOverView = $('#game-over');
+    factArea = $('.fact-area');
     let tutorial = $('#tutorial');
     let backButton = $('.back-to-menu-button');
+    let dismissModal = $('.dismiss');
 
     playButton.click(function(){
         console.log('clicked play button')
@@ -131,5 +143,9 @@ $(document).ready(function(){
         console.log(`Clicked on ${$(this).attr('id')}`)
         checkAnswer($(this));
         nextRound();
+    })
+
+    dismissModal.click(function(){
+        $('.fa-trash').css('outline', 'none')
     })
 })

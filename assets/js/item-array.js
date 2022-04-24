@@ -52,7 +52,7 @@ let items = [
         'id': "ppr-bk",
         'category': 'paper',
         'image': 'assets/images/game-items/book.png',
-        'bin': 'general-waste',
+        'bin': 'general',
         'fact': 'fact5'
     },
     {
@@ -84,7 +84,7 @@ let items = [
         'id': "ppr-coff-cp",
         'category': 'paper',
         'image': 'assets/images/game-items/coffee-cup.png',
-        'bin': 'general-waste',
+        'bin': 'general',
         'fact': 'fact9'
     },
     {
@@ -92,7 +92,7 @@ let items = [
         'id': "plst-bag",
         'category': 'plastic',
         'image': 'assets/images/game-items/plastic-bag.png',
-        'bin': 'general-waste',
+        'bin': 'general',
         'fact': 'fact7'
     },
     {
@@ -100,7 +100,7 @@ let items = [
         'id': "plstc-crl-bag",
         'category': 'plastic',
         'image': 'assets/images/game-items/cereal-bag.png',
-        'bin': 'general-waste',
+        'bin': 'general',
         'fact': 'fact6'
     },
     {
@@ -108,7 +108,7 @@ let items = [
         'id': "plstc-psta-bag",
         'category': 'plastic',
         'image': 'assets/images/game-items/pasta-bag.png',
-        'bin': 'general-waste',
+        'bin': 'general',
         'fact': 'fact6'
     },
     {
@@ -116,7 +116,7 @@ let items = [
         'id': "plstc-zplc-bag",
         'category': 'plastic',
         'image': 'assets/images/game-items/zip-loc-bag.png',
-        'bin': 'general-waste',
+        'bin': 'general',
         'fact': 'fact7'
     },
     {
@@ -124,7 +124,7 @@ let items = [
         'id': "plstc-bubl-wrap",
         'category': 'plastic',
         'image': 'assets/images/game-items/bubble-wrap.png',
-        'bin': 'general-waste',
+        'bin': 'general',
         'fact': 'fact15'
     },
     {
@@ -292,7 +292,7 @@ let items = [
         'id': "genw-cont-tp-cntr",
         'category': 'general',
         'image': 'assets/images/game-items/toothpaste-container.png',
-        'bin': 'general-waste',
+        'bin': 'general',
         'fact': 'fact22'
     },
     {
@@ -300,7 +300,7 @@ let items = [
         'id': "genw-cont-ashes",
         'category': 'general',
         'image': 'assets/images/game-items/ashes.png',
-        'bin': 'general-waste',
+        'bin': 'general',
         'fact': 'fact22'
     },
     {
@@ -308,7 +308,7 @@ let items = [
         'id': "genw-cont-nap",
         'category': 'general',
         'image': 'assets/images/game-items/nappies.png',
-        'bin': 'general-waste',
+        'bin': 'general',
         'fact': 'fact24'
     },
     {
@@ -316,7 +316,7 @@ let items = [
         'id': "genw-cont-wrap",
         'category': 'general',
         'image': 'assets/images/game-items/sweet-wrapper.png',
-        'bin': 'general-waste',
+        'bin': 'general',
         'fact': 'fact22'
     },
     {
@@ -324,7 +324,7 @@ let items = [
         'id': "genw-cont-sanit",
         'category': 'general',
         'image': 'assets/images/game-items/sanitary-waste.png',
-        'bin': 'general-waste',
+        'bin': 'general',
         'fact': 'fact27'
     },
     {
@@ -332,7 +332,7 @@ let items = [
         'id': "genw-cont-rig-plstc-cont",
         'category': 'general',
         'image': 'assets/images/game-items/rigid-plastic-containers.png',
-        'bin': 'general-waste',
+        'bin': 'general',
         'fact': 'fact22'
     },
     {
@@ -340,7 +340,7 @@ let items = [
         'id': "genw-cont-ceramics",
         'category': 'general',
         'image': 'assets/images/game-items/ceramics.png',
-        'bin': 'general-waste',
+        'bin': 'general',
         'fact': 'fact26'
     },
     {
