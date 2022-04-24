@@ -59,7 +59,7 @@
                          <!-- Initial game display with menu -->
                          <div class="row w-100" id="game-menu">
                              <div class="col-12 h-100 d-flex align-items-center justify-content-center flex-column">
-                                <button class="btn btn-primary" id="play-button">Play</button>
+                                <button class="btn btn-primary play-button">Play</button>
                                 <br>
                                 <button class="btn btn-info" id="tutorial-button">Tutorial</button>
                              </div>
@@ -76,7 +76,9 @@
                          <!-- Main game display -->
                         <div class="row w-100 d-none" id="main-game">
                             <div class="col-4 text-left">Score: <span class="score">0</span></div>
-                            <div class="col-4 text-center">logo</div>
+                            <div class="col-4 text-center d-flex align-items-end justify-content-center">
+                                <p class="question"><b>Where should I go?</b></p>
+                            </div>
                             <div class="col-4 text-right">timer</div>
                             <div class="d-flex col-12 w-100 text-center align-items-center justify-content-center flex-column">
                                 <p id="item-name">Item name</p>
@@ -91,7 +93,7 @@
                             <div class="col-3 text-center">
                                 <div class="d-flex justify-content-center align-items-center flex-column h-100">
                                     <i class="fa-solid fa-trash fa-4x" id="recycle-bin"></i>
-                                    <p>Plastic / Paper</p>
+                                    <p>Recycle</p>
                                 </div>
                             </div>
                             <div class="col-3 text-center">
@@ -114,7 +116,11 @@
                                <p>Your final score is: <span class="score"></span></p>
                                <br>
                                <p>Want to play again?</p>
+                               <button class="btn btn-primary play-button">Play Again</button>
+                               <br>
                                <button class="btn btn-info back-to-menu-button">Back to Menu</button>
+                               <br>
+                               <a href="index.html">Back to Homepage</a>
                             </div>
                         </div>
                      </div>

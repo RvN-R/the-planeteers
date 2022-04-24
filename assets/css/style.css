@@ -144,8 +144,41 @@ p{
 
 }
 
+/* Game page  ------------------------------------------*/
+.game{
+    /* background-image: radial-gradient(#1f6fa4,#246F75, #64B334); */
+    /* background-image: linear-gradient(#1f6fa4,#246F75, #64B334); */
+    /* background-image: linear-gradient(#64B334,#246F75, #1f6fa4); */
+    background-image: linear-gradient(#1f6fa4, #236823, #64B334);
+}
+
+.question{
+    font-size: 1.2rem;
+}
+
 #game-img {
     max-width: 100px;
+}
+
+.score{
+    color: green;
+    text-decoration: underline;
+}
+
+#general-waste-bin{
+    color: black ;
+}
+
+#recycle-bin{
+    color: blue;
+}
+
+#glass-bin{
+    color: green;
+}
+
+#organic-waste-bin{
+    color: brown;
 }
 
 /* about us page */
