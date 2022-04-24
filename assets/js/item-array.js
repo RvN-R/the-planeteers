@@ -347,7 +347,7 @@ let items = [
         'name': 'White Wine Bottle',
         'id': "gls-clr-wht-wn-btl",
         'category': 'glass-clear',
-        'image': 'assets/images/game-items/wine-bottle.png',
+        'image': 'assets/images/game-items/white-wine-bottle.png',
         'bin': 'glass',
         'fact': 'fact12'
     },
@@ -355,7 +355,7 @@ let items = [
         'name': 'Beer Green Bottle',
         'id': "gls-grn-beer-btl",
         'category': 'glass-green',
-        'image': 'assets/images/game-items/beer-bottle.png',
+        'image': 'assets/images/game-items/green-beer-bottle.png',
         'bin': 'glass',
         'fact': 'fact12'
     },
@@ -363,7 +363,7 @@ let items = [
         'name': 'Red Wine Bottle',
         'id': "gls-brn-wn-red-btl",
         'category': 'glass-green',
-        'image': 'assets/images/game-items/wine-bottle.png',
+        'image': 'assets/images/game-items/red-wine-bottle.png',
         'bin': 'glass',
         'fact': 'fact13'
     },
@@ -371,7 +371,7 @@ let items = [
         'name': 'Beer Brown Bottle',
         'id': "gls-brn-beer-btl",
         'category': 'glass-brown',
-        'image': 'assets/images/game-items/beer-bottle.png',
+        'image': 'assets/images/game-items/brown-beer-bottle.png',
         'bin': 'glass',
         'fact': 'fact13'
     },
