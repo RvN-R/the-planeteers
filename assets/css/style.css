@@ -230,6 +230,17 @@ body {
     color: #6E260E;
 }
 
+/* Game Modal */
+.modal-content {
+    border-radius: 0;
+    background-color: #072110;
+    color: white;
+}
+
+.bin-selection {
+    border-bottom: 1px solid #dee2e6;
+}
+
 /* about us page */
 
 /* * {
@@ -374,15 +385,6 @@ ul.social {
     /* Safari 3 - 8 */
     transform:scale(1.5);
     color:#236823;
-}
-
-/* Game Modal */
-.modal-content {
-    border-radius: 0;
-}
-
-.bin-selection {
-    border-bottom: 1px solid #dee2e6;
 }
 
 /* media query */
