@@ -1,4 +1,4 @@
-facts = {
+let facts = {
     fact1: "Recycling cardboard is a great way to save trees. You could also reuse it, carboard boxes can be made into great cars.",
     fact2: "Recycling paper is great. Around 1700 litres of oil, over 30,000 litres of water and 3 cubic metres of landfill space are saved for each tonne of recycled paper.",
     fact3: "Egg boxes are great things to reuse. They make excellent storage containers for small things or planters for seedlings.",
@@ -26,4 +26,4 @@ facts = {
     fact25: "Although bubble packaging does not have any reusability in itself, it can hold other items such as clothes and bottles together when necessary, therefore resulting in further waste like bags and straws.",
     fact26: "One of the best qualities about ceramics is that they are truly a natural product.",
     fact27: "Many sewer blockages a year are caused by sanitary waste. These items should be thrown in the bin not the toilet."
-}
+};

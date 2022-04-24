@@ -3,7 +3,7 @@ let items = [
         'name': 'Cardboard',
         'id': "ppr-crdbrd",
         'category': 'paper',
-        'image': 'assets/images/game-items/cardboard.png', //insert path to image
+        'image': 'assets/images/game-items/cardboard.png',
         'bin': 'recycle',
         'fact': 'fact1'
     },
@@ -11,7 +11,7 @@ let items = [
         'name': 'Paper',
         'id': "ppr-papr",
         'category': 'paper',
-        'image': 'assets/images/game-items/paper.png', //insert path to image
+        'image': 'assets/images/game-items/paper.png',
         'bin': 'recycle',
         'fact': 'fact2'
     },
@@ -19,7 +19,7 @@ let items = [
         'name': 'Paper Bag',
         'id': "ppr-papr-bg",
         'category': 'paper',
-        'image': 'assets/images/game-items/paper-bag.png', //insert path to image
+        'image': 'assets/images/game-items/paper-bag.png',
         'bin': 'recycle',
         'fact': 'fact2'
     },
@@ -27,7 +27,7 @@ let items = [
         'name': 'Newspaper',
         'id': "ppr-nwspapr",
         'category': 'paper',
-        'image': 'assets/images/game-items/newspaper.png', //insert path to image
+        'image': 'assets/images/game-items/newspaper.png',
         'bin': 'recycle',
         'fact': 'fact4'
     },
@@ -35,7 +35,7 @@ let items = [
         'name': 'Leaflet',
         'id': "ppr-lflt",
         'category': 'paper',
-        'image': 'assets/images/game-items/leaflet.png', //insert path to image
+        'image': 'assets/images/game-items/leaflet.png',
         'bin': 'recycle',
         'fact': 'fact4'
     },
@@ -43,7 +43,7 @@ let items = [
         'name': 'Envelope',
         'id': "ppr-nvlp",
         'category': 'paper',
-        'image': 'assets/images/game-items/envelope.png', //insert path to image
+        'image': 'assets/images/game-items/envelope.png',
         'bin': 'recycle',
         'fact': 'fact2'
     },
@@ -51,7 +51,7 @@ let items = [
         'name': 'Book',
         'id': "ppr-bk",
         'category': 'paper',
-        'image': 'assets/images/game-items/book.png', //insert path to image
+        'image': 'assets/images/game-items/book.png',
         'bin': 'general-waste',
         'fact': 'fact5'
     },
@@ -59,7 +59,7 @@ let items = [
         'name': 'Magazine',
         'id': "ppr-magzn",
         'category': 'paper',
-        'image': 'assets/images/game-items/magazine.png', //insert path to image
+        'image': 'assets/images/game-items/magazine.png',
         'bin': 'recycle',
         'fact': 'fact4'
     },
@@ -67,7 +67,7 @@ let items = [
         'name': 'Milk Carton',
         'id': "ppr-ttpk-crtn",
         'category': 'paper',
-        'image': 'assets/images/game-items/milk-carton.png', //insert path to image
+        'image': 'assets/images/game-items/milk-carton.png',
         'bin': 'recycle',
         'fact': 'fact14'
     },
@@ -75,7 +75,7 @@ let items = [
         'name': 'Egg Box',
         'id': "ppr-egg-bx",
         'category': 'paper',
-        'image': 'assets/images/game-items/egg-box.png', //insert path to image
+        'image': 'assets/images/game-items/egg-box.png',
         'bin': 'recycle',
         'fact': 'fact3'
     },
@@ -83,7 +83,7 @@ let items = [
         'name': 'Coffee Cup',
         'id': "ppr-coff-cp",
         'category': 'paper',
-        'image': 'assets/images/game-items/coffee-cup.png', //insert path to image
+        'image': 'assets/images/game-items/coffee-cup.png',
         'bin': 'general-waste',
         'fact': 'fact9'
     },
@@ -91,7 +91,7 @@ let items = [
         'name': 'Plastic Bag',
         'id': "plst-bag",
         'category': 'plastic',
-        'image': 'assets/images/game-items/plastic-bag.png', //insert path to image
+        'image': 'assets/images/game-items/plastic-bag.png',
         'bin': 'general-waste',
         'fact': 'fact7'
     },
@@ -99,7 +99,7 @@ let items = [
         'name': 'Cereal Bag',
         'id': "plstc-crl-bag",
         'category': 'plastic',
-        'image': 'assets/images/game-items/cereal-bag.png', //insert path to image
+        'image': 'assets/images/game-items/cereal-bag.png',
         'bin': 'general-waste',
         'fact': 'fact6'
     },
@@ -107,7 +107,7 @@ let items = [
         'name': 'Pasta Bag',
         'id': "plstc-psta-bag",
         'category': 'plastic',
-        'image': 'assets/images/game-items/pasta-bag.png', //insert path to image
+        'image': 'assets/images/game-items/pasta-bag.png',
         'bin': 'general-waste',
         'fact': 'fact6'
     },
@@ -115,7 +115,7 @@ let items = [
         'name': 'Zip-loc Bag',
         'id': "plstc-zplc-bag",
         'category': 'plastic',
-        'image': 'assets/images/game-items/zip-loc-bag.png', //insert path to image
+        'image': 'assets/images/game-items/zip-loc-bag.png',
         'bin': 'general-waste',
         'fact': 'fact7'
     },
@@ -123,7 +123,7 @@ let items = [
         'name': 'Bubble Wrap',
         'id': "plstc-bubl-wrap",
         'category': 'plastic',
-        'image': 'assets/images/game-items/bubble-wrap.png', //insert path to image
+        'image': 'assets/images/game-items/bubble-wrap.png',
         'bin': 'general-waste',
         'fact': 'fact15'
     },
@@ -131,7 +131,7 @@ let items = [
         'name': 'Plastic Cola Bottle',
         'id': "plstc-ck-btl",
         'category': 'plastic',
-        'image': 'assets/images/game-items/plastic-cola-bottle.png', //insert path to image
+        'image': 'assets/images/game-items/plastic-cola-bottle.png',
         'bin': 'recycle',
         'fact': 'fact8'
     },
@@ -139,7 +139,7 @@ let items = [
         'name': 'Plastic Water Bottle',
         'id': "plstc-wtr-btl",
         'category': 'plastic',
-        'image': 'assets/images/game-items/plastic-water-bottle.png', //insert path to image
+        'image': 'assets/images/game-items/plastic-water-bottle.png',
         'bin': 'recycle',
         'fact': 'fact8'
     },
@@ -147,7 +147,7 @@ let items = [
         'name': 'Shampoo Bottle',
         'id': "plstc-shp-btl",
         'category': 'plastic',
-        'image': 'assets/images/game-items/shampoo-bottle.png', //insert path to image
+        'image': 'assets/images/game-items/shampoo-bottle.png',
         'bin': 'recycle',
         'fact': 'fact16'
     },
@@ -155,7 +155,7 @@ let items = [
         'name': 'Coca Cola Can',
         'id': "al-drk-ck-can",
         'category': 'aluminium',
-        'image': 'assets/images/game-items/coca-cola-can.png', //insert path to image
+        'image': 'assets/images/game-items/coca-cola-can.png',
         'bin': 'recycle',
         'fact': 'fact19'
     },
@@ -163,7 +163,7 @@ let items = [
         'name': 'Fanta Can',
         'id': "al-drk-fnta-can",
         'category': 'aluminium',
-        'image': 'assets/images/game-items/fanta-can.png', //insert path to image
+        'image': 'assets/images/game-items/fanta-can.png',
         'bin': 'recycle',
         'fact': 'fact19'
     },
@@ -171,7 +171,7 @@ let items = [
         'name': 'Sprite Can',
         'id': "al-drk-sprt-can",
         'category': 'aluminium',
-        'image': 'assets/images/game-items/sprite-can.png', //insert path to image
+        'image': 'assets/images/game-items/sprite-can.png',
         'bin': 'recycle',
         'fact': 'fact19'
     },
@@ -179,7 +179,7 @@ let items = [
         'name': 'Club Orange Can',
         'id': "al-drk-clubor-can",
         'category': 'aluminium',
-        'image': 'assets/images/game-items/fanta-can.png', //insert path to image
+        'image': 'assets/images/game-items/fanta-can.png',
         'bin': 'recycle',
         'fact': 'fact19'
     },
@@ -187,7 +187,7 @@ let items = [
         'name': 'Baked Bean Can',
         'id': "st-baked-bean-can",
         'category': 'steel',
-        'image': 'assets/images/game-items/baked-bean-can.png', //insert path to image
+        'image': 'assets/images/game-items/baked-bean-can.png',
         'bin': 'recycle',
         'fact': 'fact20'
     },
@@ -195,7 +195,7 @@ let items = [
         'name': 'Tuna Can',
         'id': "st-tuna-can",
         'category': 'steel',
-        'image': 'assets/images/game-items/tuna-can.png', //insert path to image
+        'image': 'assets/images/game-items/tuna-can.png',
         'bin': 'recycle',
         'fact': 'fact23'
     },
@@ -203,7 +203,7 @@ let items = [
         'name': 'Bread',
         'id': "org-fd-brd",
         'category': 'food',
-        'image': 'assets/images/game-items/bread.png', //insert path to image
+        'image': 'assets/images/game-items/bread.png',
         'bin': 'organic',
         'fact': 'fact17'
     },
@@ -211,7 +211,7 @@ let items = [
         'name': 'Cooked Food',
         'id': "org-fd-ckd-fd",
         'category': 'food',
-        'image': 'assets/images/game-items/cooked-food.png', //insert path to image
+        'image': 'assets/images/game-items/cooked-food.png',
         'bin': 'organic',
         'fact': 'fact17'
     },
@@ -219,7 +219,7 @@ let items = [
         'name': 'Raw Food',
         'id': "org-fd-rw-fd",
         'category': 'food',
-        'image': 'assets/images/game-items/raw-food.png', //insert path to image
+        'image': 'assets/images/game-items/raw-food.png',
         'bin': 'organic',
         'fact': 'fact17'
     },
@@ -227,7 +227,7 @@ let items = [
         'name': 'Fruit',
         'id': "org-fd-frt",
         'category': 'food',
-        'image': 'assets/images/game-items/fruit.png', //insert path to image
+        'image': 'assets/images/game-items/fruit.png',
         'bin': 'organic',
         'fact': 'fact18'
     },
@@ -235,7 +235,7 @@ let items = [
         'name': 'Veg',
         'id': "org-fd-vg",
         'category': 'food',
-        'image': 'assets/images/game-items/veg.png', //insert path to image
+        'image': 'assets/images/game-items/veg.png',
         'bin': 'organic',
         'fact': 'fact18'
     },
@@ -243,7 +243,7 @@ let items = [
         'name': 'Tea Bag',
         'id': "org-fd-tbag",
         'category': 'food',
-        'image': 'assets/images/game-items/tea-bag.png', //insert path to image
+        'image': 'assets/images/game-items/tea-bag.png',
         'bin': 'organic',
         'fact': 'fact17'
     },
@@ -251,7 +251,7 @@ let items = [
         'name': 'Tea Leaves',
         'id': "org-fd-tlvs",
         'category': 'food',
-        'image': 'assets/images/game-items/tea-leaves.png', //insert path to image
+        'image': 'assets/images/game-items/tea-leaves.png',
         'bin': 'organic',
         'fact': 'fact18'
     },
@@ -259,7 +259,7 @@ let items = [
         'name': 'Grass Cuttings',
         'id': "org-gdn-grass",
         'category': 'garden',
-        'image': 'assets/images/game-items/grass-cuttings.png', //insert path to image
+        'image': 'assets/images/game-items/grass-cuttings.png',
         'bin': 'organic',
         'fact': 'fact21'
     },
@@ -267,7 +267,7 @@ let items = [
         'name': 'Clippings',
         'id': "org-gdn-clip",
         'category': 'garden',
-        'image': 'assets/images/game-items/clippings.png', //insert path to image
+        'image': 'assets/images/game-items/clippings.png',
         'bin': 'organic',
         'fact': 'fact21'
     },
@@ -275,7 +275,7 @@ let items = [
         'name': 'Twigs',
         'id': "org-gdn-twig",
         'category': 'garden',
-        'image': 'assets/images/game-items/twigs.png', //insert path to image
+        'image': 'assets/images/game-items/twigs.png',
         'bin': 'organic',
         'fact': 'fact21'
     },
@@ -283,7 +283,7 @@ let items = [
         'name': 'leaves',
         'id': "org-gdn-lvs",
         'category': 'garden',
-        'image': 'assets/images/game-items/leaves.png', //insert path to image
+        'image': 'assets/images/game-items/leaves.png',
         'bin': 'organic',
         'fact': 'fact21'
     },
@@ -291,7 +291,7 @@ let items = [
         'name': 'Toothpaste Container',
         'id': "genw-cont-tp-cntr",
         'category': 'general',
-        'image': 'assets/images/game-items/toothpaste-container.png', //insert path to image
+        'image': 'assets/images/game-items/toothpaste-container.png',
         'bin': 'general-waste',
         'fact': 'fact22'
     },
@@ -299,7 +299,7 @@ let items = [
         'name': 'Ashes (cold)',
         'id': "genw-cont-ashes",
         'category': 'general',
-        'image': 'assets/images/game-items/ashes.png', //insert path to image
+        'image': 'assets/images/game-items/ashes.png',
         'bin': 'general-waste',
         'fact': 'fact22'
     },
@@ -307,7 +307,7 @@ let items = [
         'name': 'Nappies',
         'id': "genw-cont-nap",
         'category': 'general',
-        'image': 'assets/images/game-items/nappies.png', //insert path to image
+        'image': 'assets/images/game-items/nappies.png',
         'bin': 'general-waste',
         'fact': 'fact24'
     },
@@ -315,7 +315,7 @@ let items = [
         'name': 'Crisp, sweet or foil-based wrappers',
         'id': "genw-cont-wrap",
         'category': 'general',
-        'image': 'assets/images/game-items/sweet-wrapper.png', //insert path to image
+        'image': 'assets/images/game-items/sweet-wrapper.png',
         'bin': 'general-waste',
         'fact': 'fact22'
     },
@@ -323,7 +323,7 @@ let items = [
         'name': 'Sanitary Waste',
         'id': "genw-cont-sanit",
         'category': 'general',
-        'image': 'assets/images/game-items/sanitary-waste.png', //insert path to image
+        'image': 'assets/images/game-items/sanitary-waste.png',
         'bin': 'general-waste',
         'fact': 'fact27'
     },
@@ -331,7 +331,7 @@ let items = [
         'name': 'Rigid Plastic Containers',
         'id': "genw-cont-rig-plstc-cont",
         'category': 'general',
-        'image': 'assets/images/game-items/rigid-plastic-containers.png', //insert path to image
+        'image': 'assets/images/game-items/rigid-plastic-containers.png',
         'bin': 'general-waste',
         'fact': 'fact22'
     },
@@ -339,7 +339,7 @@ let items = [
         'name': 'Ceramics: broken cups, plates',
         'id': "genw-cont-ceramics",
         'category': 'general',
-        'image': 'assets/images/game-items/ceramics.png', //insert path to image
+        'image': 'assets/images/game-items/ceramics.png',
         'bin': 'general-waste',
         'fact': 'fact26'
     },
@@ -347,7 +347,7 @@ let items = [
         'name': 'White Wine Bottle',
         'id': "gls-clr-wht-wn-btl",
         'category': 'glass-clear',
-        'image': 'assets/images/game-items/wine-bottle.png', //insert path to image
+        'image': 'assets/images/game-items/wine-bottle.png',
         'bin': 'glass',
         'fact': 'fact12'
     },
@@ -355,7 +355,7 @@ let items = [
         'name': 'Beer Green Bottle',
         'id': "gls-grn-beer-btl",
         'category': 'glass-green',
-        'image': 'assets/images/game-items/beer-bottle.png', //insert path to image
+        'image': 'assets/images/game-items/beer-bottle.png',
         'bin': 'glass',
         'fact': 'fact12'
     },
@@ -363,7 +363,7 @@ let items = [
         'name': 'Red Wine Bottle',
         'id': "gls-brn-wn-red-btl",
         'category': 'glass-green',
-        'image': 'assets/images/game-items/wine-bottle.png', //insert path to image
+        'image': 'assets/images/game-items/wine-bottle.png',
         'bin': 'glass',
         'fact': 'fact13'
     },
@@ -371,8 +371,8 @@ let items = [
         'name': 'Beer Brown Bottle',
         'id': "gls-brn-beer-btl",
         'category': 'glass-brown',
-        'image': 'assets/images/game-items/beer-bottle.png', //insert path to image
+        'image': 'assets/images/game-items/beer-bottle.png',
         'bin': 'glass',
         'fact': 'fact13'
     },
-]
+];
