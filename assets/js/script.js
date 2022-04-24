@@ -8,11 +8,11 @@ function displayItem(item){
     console.log('Calling displayItem function')
     let gameItem = $('#game-img');
     console.log(`game img src: ${gameItem.attr('src')}`);
-    // set the src attribute to item['image']
     console.log(`image path string: ${item['image']}`)
     let itemName = $('#item-name');
-    itemName.text(item['name'])
-    gameItem.attr('data-bin', item['bin'])
+    itemName.text(item['name']);
+    gameItem.attr('src', item['image']);
+    gameItem.attr('data-bin', item['bin']);
 }
 
 /**
@@ -27,10 +27,13 @@ function checkAnswer(bin){
     console.log(`data-bin: ${$('#game-img').attr('data-bin')}`)
 
     if (binType == $('#game-img').attr('data-bin')){
-        console.log('Corrrect!')
+        console.log('Corrrect!');
+        bin.css({'outline': '2px solid green'});
         score += 10;
     } else {
-        console.log('Incorrect!')
+        console.log('Incorrect!');
+        // Insert modal logic
+        bin.css({'outline': '2px solid red'});
     }
     $('.score').text(score);
 }
@@ -76,7 +79,7 @@ function nextRound(){
 
 $(document).ready(function(){
     // tutorial view, game view and menu view
-    let playButton = $('#play-button');
+    let playButton = $('.play-button');
     let tutorialButton = $('#tutorial-button');
     let menu = $('#game-menu');
     mainGame = $('#main-game');
