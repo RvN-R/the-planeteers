@@ -212,6 +212,11 @@ h5 {
 .social, p {
     text-align: center;
   }
+
+  ul.social {
+    padding: 0;
+    margin: 0;
+}
   
   .social a {
     text-decoration: none;
@@ -267,54 +272,4 @@ h5 {
     .person {
         width: 100%;
     }
-}
-/* footer media */
-@media screen and (max-width: 470px) {
-    .footer li {
-        margin: 0px;
-        font-size: 0.7em;
-    }
-}
-
-/* footer */
-.footer {
-    display: flex;
-    justify-content: center;
-    background-color: #072110;
-    padding: 10px 0;
-}
-
-.footer ul {
-    padding: 0;
-    margin: 0;
-}
-
-.footer p {
-    margin: 0;
-}
-
-.footer li {
-    list-style: none;
-    /* border: 2px solid red; */
-    padding: 5px 10px;
-    /* background: brown; */
-    color: white;
-    margin: 0 5px;
-}
-
-.footer li a {
-    /* background: brown; */
-    color: white;
-    text-decoration: none;
-}
-
-.footer li a:hover {
-    color: #64b334;
-    border-bottom: 2px solid #64b334;
-}
-
-footer p {
-    text-align: center;
-    border-bottom: 2px solid #072110;
-    margin-bottom: 0;
 }
