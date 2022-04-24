@@ -48,6 +48,10 @@ p{
 
 /* home page */
 
+.homepage-p p {
+    color: black;
+}
+
 .home-title,
 .did-you-know-title,
 .make-a-difference-title{
