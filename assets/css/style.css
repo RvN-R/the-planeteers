@@ -208,6 +208,11 @@ h5 {
     text-align: center;
 }
 
+/* Game Modal */
+.modal-content {
+    border-radius: 0;
+}
+
 /* media query */
 
 @media screen and (max-width: 770px) {
