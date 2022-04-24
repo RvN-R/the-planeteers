@@ -104,8 +104,8 @@ p{
 
 }
 
-.fact-row{
-    background-color: transparent;
+#game-img {
+    max-width: 100px;
 }
 
 /* about us page */

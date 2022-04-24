@@ -1,43 +1,18 @@
 // Game logic
 
-$(document).ready(function(){
-    let playButton = $('#play-button');
-    let tutorialButton = $('#tutorial-button');
-    let menu = $('#game-menu');
-    let mainGame = $('#main-game');
-    let tutorial = $('#tutorial');
-    let backButton = $('#back-to-menu-button');
-
-    playButton.click(function(){
-        menu.hide();
-        mainGame.removeClass('d-none');
-    })
-
-    tutorialButton.click(function(){
-        menu.hide();
-        tutorial.removeClass('d-none');
-    })
-
-    backButton.click(function(){
-        tutorial.hide();
-        menu.show();
-    })
-})
-
-
-/**
- * Displays the bins in the game area
- */
-function showBins(){
-    console.log('Calling showBins function')
-}
 
 /**
  * displays the current item
  */
-function displayItem(array){
+function displayItem(item){
     console.log('Calling displayItem function')
-
+    let gameItem = $('#game-img');
+    console.log(`game img src: ${gameItem.attr('src')}`);
+    // set the src attribute to item['image']
+    console.log(`image path string: ${item['image']}`)
+    let itemName = $('#item-name');
+    itemName.text(item['name'])
+    gameItem.attr('data-bin', item['bin'])
 }
 
 /**
@@ -45,38 +20,113 @@ function displayItem(array){
  * displays a pop-up message to inform the user
  */
 function checkAnswer(bin){
-    console.log('Calling checkAnswer function')
-    let currentItem; //Assign the current item
-    if (bin.attr('id') == currentItem.attr('data-category')){
-        console.log('the answer is correct')
-    } else{
-        console.log('the answer is incorrect')
+    console.log('Calling checkAnswer function');
+    console.log(`bin: ${bin.attr('id')}`);
+    let binType = bin.attr('id').split('-')[0];
+    console.log(`bin type: ${binType}`);
+    console.log(`data-bin: ${$('#game-img').attr('data-bin')}`)
+
+    if (binType == $('#game-img').attr('data-bin')){
+        console.log('Corrrect!')
+        score += 10;
+    } else {
+        console.log('Incorrect!')
     }
-    let messageDiv; //Assign message div element
-    messageDiv.show()
+    $('.score').text(score);
 }
 
-let rounds = 0
 /**
- * The main function of the game
+ * Game is over
  */
-function main(){
-    console.log('Calling main function');
-    while (rounds < 10){
-        showBins();
-        let bins; //assign value of bin elements, uncomment the following lines
-        // bins.click(function(){
-        //     console.log('added eventlistener to bins');
-        //     checkAnswer();
-        // })
-        itemsCopy = [...items]
-        displayItem(itemsCopy);
-        
-        let playButton; //Assign play button element
-        // playButton.click(function(){
-        //     main();
-        // })       }   
+function gameOver(){
+    console.log('Game Over')
+    gameOverView.removeClass('d-none');
+    gameOverView.show();
+    mainGame.hide();
+}
 
+/**
+ * Moves on to the next round
+ */
+function nextRound(){
+    console.log('Calling nextRound function');
+    console.log(`${rounds}`)
+    if (rounds < 10){
+        let randomIndex = Math.floor(Math.random() * itemsCopy.length);
+        randomItem = itemsCopy[randomIndex];
+        displayItem(randomItem);
         rounds++;
+        itemsCopy.splice(randomIndex, 1)
+    } else {
+        gameOver();
     }
 }
+
+/**
+ * Starts the game
+ */
+ function start(){
+    console.log('Calling start function');
+    itemsCopy = [...items];
+    rounds = 0;
+    score = 0;
+    $('.score').text('0');
+    nextRound();
+}
+
+$(document).ready(function(){
+    // tutorial view, game view and menu view
+    let playButton = $('#play-button');
+    let tutorialButton = $('#tutorial-button');
+    let menu = $('#game-menu');
+    mainGame = $('#main-game');
+    gameOverView = $('#game-over')
+    let tutorial = $('#tutorial');
+    let backButton = $('.back-to-menu-button');
+
+    playButton.click(function(){
+        console.log('clicked play button')
+        menu.hide();
+        mainGame.removeClass('d-none');
+        mainGame.show();
+        start();
+    })
+
+    tutorialButton.click(function(){
+        console.log('clicked tutorial button')
+        menu.hide();
+        tutorial.removeClass('d-none');
+        tutorial.show();
+    })
+
+    backButton.click(function(){
+        console.log('clicked back button')
+        tutorial.hide();
+        gameOverView.hide();
+        menu.show();
+    })
+
+    $('#general-waste-bin').click(function(){
+        console.log(`Clicked on ${$(this).attr('id')}`)
+        checkAnswer($(this));
+        nextRound();
+    })
+
+    $('#recycle-bin').click(function(){
+        console.log(`Clicked on ${$(this).attr('id')}`)
+        checkAnswer($(this));
+        nextRound();
+    })
+
+    $('#glass-bin').click(function(){
+        console.log(`Clicked on ${$(this).attr('id')}`)
+        checkAnswer($(this));
+        nextRound();
+    })
+
+    $('#organic-waste-bin').click(function(){
+        console.log(`Clicked on ${$(this).attr('id')}`)
+        checkAnswer($(this));
+        nextRound();
+    })
+})
