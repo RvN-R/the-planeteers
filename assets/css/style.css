@@ -159,11 +159,7 @@ p{
 
 /* Game page  ------------------------------------------*/
 .game{
-    /* background-image: radial-gradient(#1f6fa4,#246F75, #64B334); */
-    /* background-image: linear-gradient(#1f6fa4,#246F75, #64B334); */
-    /* background-image: linear-gradient(#64B334,#246F75, #1f6fa4); */
-    /* background-image: linear-gradient(#1f6fa4, #236823, #64B334); */
-    background-image: radial-gradient(#F8F8F8,#64B334);
+    background-image: radial-gradient(#F8F8F8,#D3D3D3, #64B334);
 }
 
 .question{
@@ -354,5 +350,46 @@ h5 {
 @media screen and (max-width: 440px) {
     .person {
         width: 100%;
+    }
+}
+
+/* Game page - Mobile */
+@media screen and (min-width: 320px){
+    .fa-trash {
+        font-size: 3em; /*Equivalent to the fa-5x bootstrap class*/
+    }
+}
+
+/* Game page - Tablets */
+@media screen and (min-width: 640px){
+    .fa-trash {
+        font-size: 4em; /*Equivalent to the fa-5x bootstrap class*/
+    }
+
+    #game-img {
+        max-width: 120px;
+    }
+}
+
+/* Game page - Desktops */
+@media screen and (min-width: 770px){
+    .game-info{
+        font-size: 1.5rem;
+    }
+
+    .question{
+        font-size: 1.6rem;
+    }
+
+    .fa-trash + p {
+        font-size: 1.2rem;
+    }
+
+    .fa-trash {
+        font-size: 5em; /*Equivalent to the fa-5x bootstrap class*/
+    }
+
+    #game-img {
+        max-width: 150px;
     }
 }
