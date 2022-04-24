@@ -91,9 +91,19 @@ body {
 .home-title,
 .did-you-know-title,
 .make-a-difference-title{
-    font-family:'Roboto';
-    color: #246F75;
-    -webkit-text-stroke: 1px white;
+    font-family:'Bangers';
+    color: #64B334;
+    font-size: 4rem;
+    text-shadow: 0.5px 0.5px black;
+    /* -webkit-text-stroke: 1px white; */
+}
+
+.home-sub-title{
+    font-family:'Bangers';
+    color: #64B334;
+    font-size: 2rem;
+    text-shadow: 0.5px 0.5px black;
+    /* -webkit-text-stroke: 1px white; */
 }
 
 .did-you-know-title,
