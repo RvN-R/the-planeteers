@@ -408,6 +408,10 @@ ul.social {
     color:#236823;
 }
 
+.copyright {
+    color: white;
+}
+
 /* media query */
 
 @media screen and (max-width: 770px) {
