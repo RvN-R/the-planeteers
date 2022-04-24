@@ -280,21 +280,27 @@ h2 {
 .purpose {
     display: flex;
     justify-content: space-around;
-    margin: 0 5%;
+    margin: 0 5% 5% 5%;
     height: auto;
 }
 
 .purpose div {
     width: 100%;
     margin: 0 2%;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 3px #072110;
+    padding: 10px;
 }
 .purpose p {
     text-align: justify ;
     line-height: 1.5em;
+    padding: 0 5px;
 }
 
 h5 {
     text-align: center;
+    border-bottom: 2px solid #072110;
 }
 
 /* Footer */
@@ -354,6 +360,10 @@ h5 {
 @media screen and (max-width: 600px) {
     .purpose {
         flex-direction: column;
+    }
+    .purpose div {
+        width: 100%;
+        margin: 20px 0;
     }
 }
 
