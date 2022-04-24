@@ -355,6 +355,14 @@ h5 {
 }
 
 /* Footer */
+footer{
+    background-color: #072110;
+}
+
+.footer-text{
+    color: white;
+}
+
 .social, p {
     text-align: center;
 }
