@@ -24,5 +24,6 @@ facts = {
     fact23: "Canned foods have a long shelf life so can be used straight from the shelf with no need for chilling or freezing which saves more energy – and more money",
     fact24: "Once in landfill, the plastics in disposable nappies can take 200 to 500 years to break down.",
     fact25: "Although bubble packaging does not have any reusability in itself, it can hold other items such as clothes and bottles together when necessary, therefore resulting in further waste like bags and straws.",
-    fact26: "One of the best qualities about ceramics is that they are truly a natural product."
+    fact26: "One of the best qualities about ceramics is that they are truly a natural product.",
+    fact27: "Many sewer blockages a year are caused by sanitary waste. These items should be thrown in the bin not the toilet."
 }
