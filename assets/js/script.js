@@ -92,6 +92,7 @@ $(document).ready(function(){
         menu.hide();
         mainGame.removeClass('d-none');
         mainGame.show();
+        gameOverView.hide();
         start();
     })
 
