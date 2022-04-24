@@ -208,6 +208,37 @@ h5 {
     text-align: center;
 }
 
+/* Footer */
+.social, p {
+    text-align: center;
+  }
+  
+  .social a {
+    text-decoration: none;
+  }
+  
+  .social li{
+    display: inline;
+  }
+  
+  .social i{
+    font-size: 180%;
+    padding: 5%;
+    color: blue;
+    padding: 10px;
+    transition: 0.2s;
+    margin: 0 auto;
+  }
+  
+  .social i:hover{
+    -ms-transform:scale(1.5);
+    /* IE 9 */
+    -webkit-transform:scale(1.5);
+    /* Safari 3 - 8 */
+    transform:scale(1.5);
+    color:green;
+  }
+  
 /* media query */
 
 @media screen and (max-width: 770px) {
