@@ -73,6 +73,7 @@ function nextRound(){
     rounds = 0;
     score = 0;
     $('.score').text('0');
+    $('#rounds').text('1');
     nextRound();
 }
 
