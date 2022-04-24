@@ -35,6 +35,7 @@ function checkAnswer(bin){
         bin.css({'outline': '2px solid red'});
     }
     $('.score').text(score);
+    $('#rounds').text(rounds + 1);
     modal.modal('show');
     let itemFact = randomItem['fact']
     factArea.text(`${facts[itemFact]}`);
