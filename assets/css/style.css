@@ -162,7 +162,8 @@ p{
     /* background-image: radial-gradient(#1f6fa4,#246F75, #64B334); */
     /* background-image: linear-gradient(#1f6fa4,#246F75, #64B334); */
     /* background-image: linear-gradient(#64B334,#246F75, #1f6fa4); */
-    background-image: linear-gradient(#1f6fa4, #236823, #64B334);
+    /* background-image: linear-gradient(#1f6fa4, #236823, #64B334); */
+    background-image: radial-gradient(#F8F8F8,#64B334);
 }
 
 .question{
@@ -191,7 +192,7 @@ p{
 }
 
 #organic-waste-bin{
-    color: brown;
+    color: #6E260E;
 }
 
 /* about us page */

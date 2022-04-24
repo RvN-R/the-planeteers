@@ -19,6 +19,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="assets/js/item-array.js"></script>
+    <script src="assets/js/fact-object.js"></script>
     <script src="assets/js/script.js"></script>
 
     <title>The Planeteers</title>
@@ -52,10 +53,10 @@
         <div class="container-fluid">
             <div class="row g-0">
                 <div class="col-12 d-flex justify-content-center">
-                    <h1>Recycle Challenge</h1> 
+                    <h1>Let's Bin It!</h1> 
                 </div>
                 <div class="col-12 d-flex justify-content-center game-container min-vh-100">
-                     <div class="d-flex col-12 d-flex justify-content-center game bg-light bg-gradient border h-75">
+                     <div class="d-flex col-12 d-flex justify-content-center game rounded border h-75">
                          <!-- Initial game display with menu -->
                          <div class="row w-100" id="game-menu">
                              <div class="col-12 h-100 d-flex align-items-center justify-content-center flex-column">
@@ -137,18 +138,19 @@
             <div class="modal-content">
                 <div class="modal-header answer-confirmation">
                     <h5 class="modal-title" id="staticBackdropLabel">Correct or incorrect confirmation</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close dismiss" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body bin-selection">
                     <p>Bin selected</p>
                 </div>
-                <div class="modal-body fact-area">
-                    <p>Fact area</p>
+                <div class="modal-body">
+                    <h4 class="text-center">Did you know?</h4>
+                    <p class="fact-area">Fact area</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary dismiss" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
