@@ -125,11 +125,13 @@ h2 {
     margin: 20px 0;
     font-family: 'Bangers';
     color: #64B334;;
+    font-size: 4rem;
 }
 
 .main-container {
     background-color: rgb(216, 216, 216);
     z-index: -2;
+    padding: 40px 0;
 }
 
 .container{
@@ -222,7 +224,8 @@ h5 {
     text-align: center;
     border-bottom: 2px solid #072110;
     font-family: 'Bangers';
-    color: #64B334;;
+    color: #64B334;
+    font-size: 2rem;
 }
 
 /* Footer */
