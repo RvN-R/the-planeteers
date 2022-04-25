@@ -6,9 +6,13 @@ header {
     margin: 0;
 }
 
-.card,
-p{
-    font-family: 'Roboto';
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card
+{
+    background-color: #072110;
 }
 
 .fact-image {
@@ -17,6 +21,29 @@ p{
     aspect-ratio: 4 / 3;
     object-fit: cover;
 }
+
+.btn-primary{
+    font-family: 'Bangers' !important;
+    color: white !important;
+    text-shadow: 0.5px 0.5px black !important;
+    background-color: #64B334 !important;
+    border-color: #236823 !important;
+    padding: 0.5rem 1rem!important;
+    font-size: 2rem !important;
+    border-radius: 0.3rem !important;
+}
+
+.btn-primary:hover{
+    font-family: 'Bangers' !important;
+    color: #64B334 !important;
+    text-shadow: 0.5px 0.5px black !important;
+    background-color: white !important;
+    border-color: #236823 !important;
+    padding: 0.5rem 1rem!important;
+    font-size: 2rem !important;
+    border-radius: 0.3rem !important;
+}
+
 
 /* Site Colour Variables */
 .honolulu-blue{
@@ -41,9 +68,41 @@ p{
 
 
 /* Navigation */
+.navbar {
+    background-color: #072110;
+}
+
+.navbar-toggler {
+    border-color: white;
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #64B334;
+}
+
+.active a {
+    color: #64B334;
+}
+
 .logo{
-    width: 100%;
     height: 100px;
+}
+
+.logo:hover {
+    animation: logo 1s;
+}
+
+@keyframes logo {
+    100% {transform: rotate(360deg);}
 }
 
 /* home page */
@@ -53,11 +112,23 @@ p{
 }
 
 .home-title,
+.game-title,
 .did-you-know-title,
 .make-a-difference-title{
-    font-family:'Roboto';
-    color: #246F75;
-    -webkit-text-stroke: 1px white;
+    font-family:'Bangers';
+    color: #64B334;
+    font-size: 4rem;
+    text-shadow: 0.5px 0.5px black;
+    /* -webkit-text-stroke: 1px white; */
+}
+
+.home-sub-title,
+.tutorial-title{
+    font-family:'Bangers';
+    color: #64B334;
+    font-size: 3rem;
+    text-shadow: 0.5px 0.5px black;
+    /* -webkit-text-stroke: 1px white; */
 }
 
 .did-you-know-title,
@@ -108,8 +179,72 @@ p{
 
 }
 
+.card:hover {
+    animation: card 0.2s;
+}
+
+@keyframes card {
+    0% { transform: rotate(0deg); }
+  20% { transform: rotate(1deg); }
+  40% { transform: rotate(-1deg); }
+  60% { transform: rotate(1deg); }
+  80% { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.card-text,
+.card-title {
+    color: white;
+}
+
+
+/* Game page  ------------------------------------------*/
+.game{
+    background-image: radial-gradient(#F8F8F8,#D3D3D3, #64B334);
+}
+
+.question{
+    font-size: 1.2rem;
+}
+
 #game-img {
     max-width: 100px;
+}
+
+.score{
+    color: green;
+    text-decoration: underline;
+}
+
+#general-waste-bin{
+    color: black ;
+}
+
+#recycle-bin{
+    color: blue;
+}
+
+#glass-bin{
+    color: green;
+}
+
+#organic-waste-bin{
+    color: #6E260E;
+}
+
+.game-container{
+    margin-bottom: -20vh;
+}
+
+/* Game Modal */
+.modal-content {
+    border-radius: 0;
+    background-color: #072110;
+    color: white;
+}
+
+.bin-selection {
+    border-bottom: 1px solid #dee2e6;
 }
 
 /* about us page */
@@ -229,49 +364,59 @@ p{
 }
 
 /* Footer */
+footer{
+    background-color: #072110;
+}
+
+.footer-text{
+    color: white;
+}
+
 .social, p {
     text-align: center;
-  }
+}
 
-  ul.social {
+ul.social {
     padding: 0;
     margin: 0;
 }
   
-  .social a {
+.social a, .sources a {
     text-decoration: none;
-  }
+}
   
-  .social li{
+.social li{
     display: inline;
-  }
+}
   
-  .social i{
+.social i{
     font-size: 180%;
     padding: 5%;
-    color: blue;
+    color: #1f6fa4;
     padding: 10px;
     transition: 0.2s;
     margin: 0 auto;
-  }
+}
+
+.sources a {
+    color: #1f6fa4;
+}
+
+.sources a:hover {
+    color:#236823;
+}
   
-  .social i:hover{
+.social i:hover{
     -ms-transform:scale(1.5);
     /* IE 9 */
     -webkit-transform:scale(1.5);
     /* Safari 3 - 8 */
     transform:scale(1.5);
-    color:green;
-  }
-  
-
-/* Game Modal */
-.modal-content {
-    border-radius: 0;
+    color:#236823;
 }
 
-.bin-selection {
-    border-bottom: 1px solid #dee2e6;
+.copyright {
+    color: white;
 }
 
 /* media query */
@@ -295,5 +440,53 @@ p{
 @media screen and (max-width: 440px) {
     .person {
         width: 100%;
+    }
+}
+
+/* Game page - Mobile */
+@media screen and (min-width: 320px){
+    .fa-trash {
+        font-size: 3em; /*Equivalent to the fa-5x bootstrap class*/
+    }
+}
+
+/* Game page - Tablets */
+@media screen and (min-width: 640px){
+    .fa-trash {
+        font-size: 4em; /*Equivalent to the fa-5x bootstrap class*/
+    }
+
+    #game-img {
+        max-width: 120px;
+    }
+}
+
+/* Game page - Desktops */
+@media screen and (min-width: 770px){
+    .game-info{
+        font-size: 1.5rem;
+    }
+
+    .question{
+        font-size: 1.6rem;
+    }
+
+    .fa-trash + p {
+        font-size: 1.2rem;
+    }
+
+    .fa-trash {
+        font-size: 5em; /*Equivalent to the fa-5x bootstrap class*/
+    }
+
+    #game-img {
+        max-width: 150px;
+    }
+}
+
+/* Media query for navbar links */
+@media screen and (min-width: 990px){
+    .nav-link {
+        font-size: 1.7em;
     }
 }

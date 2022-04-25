@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/b83175b9a4.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
@@ -18,6 +19,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="assets/js/item-array.js"></script>
+    <script src="assets/js/fact-object.js"></script>
     <script src="assets/js/script.js"></script>
 
     <title>The Planeteers</title>
@@ -26,17 +28,17 @@
 <body>
     <header>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html"><img src="./assets/images/Planeteers Logo Idea 6.png" class="logo"/></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <a class="navbar-brand" href="index.html"><img src="./assets/images/Planeteers Logo Idea 6.png" class="logo"/></a>
               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link" href="game.html">Game</a>
                 </li>
                 <li class="nav-item">
@@ -50,58 +52,90 @@
     <section>
         <div class="container-fluid">
             <div class="row g-0">
-                <div class="col-12 d-flex justify-content-center">
-                    <h1>Recycle Challenge</h1> 
+                <div class="col-12 d-flex justify-content-center pt-3">
+                    <h1 class="game-title">Let's Bin It!</h1> 
                 </div>
                 <div class="col-12 d-flex justify-content-center game-container min-vh-100">
-                     <div class="d-flex col-12 d-flex justify-content-center game bg-light bg-gradient border h-75">
+                     <div class="d-flex col-12 d-flex justify-content-center game rounded border h-75">
                          <!-- Initial game display with menu -->
                          <div class="row w-100" id="game-menu">
                              <div class="col-12 h-100 d-flex align-items-center justify-content-center flex-column">
-                                <button class="btn btn-primary" id="play-button">Play</button>
+                                <button class="btn btn-primary play-button">Play</button>
                                 <br>
-                                <button class="btn btn-info" id="tutorial-button">Tutorial</button>
+                                <button class="btn btn-primary btn-info" id="tutorial-button">Tutorial</button>
                              </div>
                          </div>
                          <!-- Tutorial display -->
-                         <div class="row w-100 d-none" id="tutorial">
-                            <div class="col-12 h-100 d-flex align-items-center justify-content-center flex-column">
-                               <h3>Tutorial</h3>
-                               <p>Tutorial explanation</p>
+                         <div class="row w-100 d-none overflow-auto" id="tutorial">
+                            <div class="col-12 d-flex align-items-center justify-content-center flex-column">
+                               <p><u>How to play The Planeteer Game</u></p>
+                               <ol>
+                                 <li>Click on Play the Game and an item will be displayed.</li>
+                                 <li>Click on the correct bin to dispose of the item.</li>
+                                 <li>When the bin is selected, a popup window will open to display if answer is correct or incorrect.</li>
+                                 <li>The popup wil also display fact information related to the item.</li>
+                               </ol>
+                               <ul>
+                                 <li>General Waste Bin:</li>
+                                 <ul>
+                                  <li>Anything that cannot be recycled.</li>
+                                  <li>No electrical items.</li>
+                                  <li>No hazardous items.</li>
+                                </ul>
+                                 <li>Recycle Bin:</li>
+                                 <ul>
+                                  <li>Paper.</li>
+                                  <li>Soft plastic.</li>
+                                  <li>Aluminium cans.</li>
+                                </ul>
+                                 <li>Glass Bin:</li>
+                                 <ul>
+                                  <li>Clear glass jars and clear glass bottles, no lids or tops.</li>
+                                  <li>Green glass bottles, no corks or screw-tops.</li>
+                                  <li>Brown glass bottles, no corks or screw-tops.</li>
+                                </ul>
+                                 <li>Organic Waste Bin:</li>
+                                 <ul>
+                                  <li>Food waste.</li>
+                                  <li>Garden waste.</li>
+                                </ul>
+                               </ul>
                                <br>
-                               <button class="btn btn-info back-to-menu-button">Back to Menu</button>
+                               <button class="btn btn-primary btn-info back-to-menu-button mb-2">Back to Menu</button>
                             </div>
                         </div>
                          <!-- Main game display -->
                         <div class="row w-100 d-none" id="main-game">
-                            <div class="col-4 text-left">Score: <span class="score">0</span></div>
-                            <div class="col-4 text-center">logo</div>
-                            <div class="col-4 text-right">timer</div>
+                            <div class="col-4 text-left game-info">Score: <span class="score">0</span></div>
+                            <div class="col-4 text-center d-flex align-items-end justify-content-center">
+                                <p class="question"><b>Where should I go?</b></p>
+                            </div>
+                            <div class="col-4 text-right game-info">Challenge <span id="rounds">1</span></div>
                             <div class="d-flex col-12 w-100 text-center align-items-center justify-content-center flex-column">
                                 <p id="item-name">Item name</p>
                                 <img src="assets/images/game-items/plastic-bottle.png" class="img-fluid w-50" id="game-img" alt="">
                             </div> 
                             <div class="col-3 text-center">
                                 <div class="d-flex justify-content-center align-items-center flex-column h-100">
-                                    <i class="fa-solid fa-trash fa-4x" id="general-waste-bin"></i>
+                                    <i class="fa-solid fa-trash" id="general-waste-bin"></i>
                                     <p>General Waste</p>
                                 </div>
                             </div>
                             <div class="col-3 text-center">
                                 <div class="d-flex justify-content-center align-items-center flex-column h-100">
-                                    <i class="fa-solid fa-trash fa-4x" id="recycle-bin"></i>
-                                    <p>Plastic / Paper</p>
+                                    <i class="fa-solid fa-trash" id="recycle-bin"></i>
+                                    <p>Recycle</p>
                                 </div>
                             </div>
                             <div class="col-3 text-center">
                                 <div class="d-flex justify-content-center align-items-center flex-column h-100">
-                                    <i class="fa-solid fa-trash fa-4x" id="glass-bin"></i>
+                                    <i class="fa-solid fa-trash" id="glass-bin"></i>
                                     <p>Glass</p>
                                 </div>
                             </div>
                             <div class="col-3 text-center align-middle">
                                 <div class="d-flex justify-content-center align-items-center flex-column h-100">
-                                    <i class="fa-solid fa-trash fa-4x" id="organic-waste-bin"></i>
+                                    <i class="fa-solid fa-trash" id="organic-waste-bin"></i>
                                     <p>Organic Waste</p>
                                 </div>
                             </div>
@@ -113,7 +147,11 @@
                                <p>Your final score is: <span class="score"></span></p>
                                <br>
                                <p>Want to play again?</p>
-                               <button class="btn btn-info back-to-menu-button">Back to Menu</button>
+                               <button class="btn btn-primary play-button">Play Again</button>
+                               <br>
+                               <button class="btn btn-primary btn-info back-to-menu-button">Back to Menu</button>
+                               <br>
+                               <a href="index.html">Back to Homepage</a>
                             </div>
                         </div>
                      </div>
@@ -130,29 +168,83 @@
             <div class="modal-content">
                 <div class="modal-header answer-confirmation">
                     <h5 class="modal-title" id="staticBackdropLabel">Correct or incorrect confirmation</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
                 </div>
                 <div class="modal-body bin-selection">
                     <p>Bin selected</p>
                 </div>
-                <div class="modal-body fact-area">
-                    <p>Fact area</p>
+                <div class="modal-body">
+                    <h4 class="text-center">Did you know?</h4>
+                    <p class="fact-area">Fact area</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary dismiss" data-dismiss="modal">Continue</button>
                 </div>
             </div>
         </div>
     </div>
       
-    <!-- Footer -->
-    <footer>
-        <div class="col-12 d-flex justify-content-center">
-            <h1>Footer Goes Here!</h1>
-        </div>
-    </footer>
+ <!-- Footer Section with Social Network links to external pages -->
+ <footer>
+  <div class="col-12 d-flex justify-content-center">
+  <ul class="social">
+    <li>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+        aria-label="Facebook link opens in new blank tab">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+        aria-label="Twitter link opens in new blank tab">
+        <i class="fab fa-twitter-square"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+        aria-label="Instagram link opens in new blank tab">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+        aria-label="YouTube link opens in new blank tab">
+        <i class="fab fa-youtube-square"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+  <div class="text-center sources mt-1 mb-2">
+      <p class="mb-0 footer-text">Links to Fact Sources:</p>
+      <div>
+          <a class="p-1" href="https://www.recycle-more.co.uk/household/recycling-facts" target="_blank" rel="noopener"
+          aria-label="Recycle More link opens in new blank tab">
+              Recycle More
+          </a>
+          <a class="p-1" href="https://plasticoceans.org/the-facts/" target="_blank" rel="noopener"
+          aria-label="Plastic Oceans link opens in new blank tab">
+              Plastic Oceans
+          </a>
+      </div>
+      <div>
+          <a class="p-1" href="https://www.recyclingbins.co.uk/recycling-facts/" target="_blank" rel="noopener"
+          aria-label="Recycling bins link opens in new blank tab">
+              Recycling Bins
+          </a>
+          <a class="p-1" href="https://www.theworldcounts.com/challenges/planet-earth/state-of-the-planet/world-waste-facts/story" target="_blank" rel="noopener"
+          aria-label="The world counts link opens in new blank tab">
+              The World Counts
+          </a>
+      </div>
+  </div>
+  <p class="copyright pb-1 mb-0">The Planeteers &copy; <span id="currentYear"></span></p>
+</footer>
+
+
+  <script>
+    var date = new Date();
+    var year =date.getFullYear();
+    document.getElementById("currentYear").innerHTML = year;
+  </script>
 </body>
 
 </html>
