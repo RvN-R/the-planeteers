@@ -233,7 +233,12 @@ body {
 }
 
 .game-container{
-    margin-bottom: -20vh;
+    margin-bottom: -12vh;
+    min-height: 90vh;
+}
+
+.game{
+    height: 80%;
 }
 
 /* Game Modal */
