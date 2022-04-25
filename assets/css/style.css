@@ -232,6 +232,10 @@ body {
     color: #6E260E;
 }
 
+.game-container{
+    margin-bottom: -20vh;
+}
+
 /* Game Modal */
 .modal-content {
     border-radius: 0;
@@ -474,5 +478,12 @@ ul.social {
 
     #game-img {
         max-width: 150px;
+    }
+}
+
+/* Media query for navbar links */
+@media screen and (min-width: 990px){
+    .nav-link {
+        font-size: 1.7em;
     }
 }
